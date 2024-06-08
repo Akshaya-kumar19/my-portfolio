@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio-1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/devjane.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Library <strong>Management System</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        A Training Project
+      </p>
+      <img src="img/portfolio-item-3-logo.jpeg" alt="" class="intro__img" />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>
+        During my training period, I had the opportunity to work on a
+        comprehensive project aimed at developing a Library Management System
+        using Spring Boot. This project involved creating a system to manage
+        library operations efficiently, covering aspects such as student data
+        management, book registration, check-in/check-out processes, and waiting
+        list management. The primary objective was to bridge the gap between
+        theoretical knowledge and practical application, enhancing my
+        understanding of Spring Boot and its ecosystem. The project utilized a
+        technology stack comprising Java, Spring Boot, Hibernate/JPA, MySQL, and
+        Maven, with Logback employed for logging purposes. The system
+        architecture was designed with a layered approach, featuring models for
+        data representation, controllers for handling HTTP requests, services
+        for business logic implementation, and configurations for setting up
+        logging and other parameters.
+      </p>
+      <p>
+        Key components of the project included StudentBookRegister, StudentData,
+        WaitingList, and ResponseData models, along with LibraryController and
+        StudentController for managing book and student operations,
+        respectively. Service classes like LibraryService, ImportService,
+        CheckInService, CheckOutService, and DownloadService encapsulated the
+        core functionalities of the library management processes. Custom
+        exceptions such as InvalidGender, StudentIdNotFound, and
+        UpdateIdNotFound ensured robust error handling. These components worked
+        together seamlessly to provide a comprehensive solution for library
+        management, offering features like student registration, book check-in
+        and check-out, and waiting list management.
+      </p>
+      <p>
+        Implementing this project presented several challenges, including
+        handling complex data relationships, ensuring data integrity during
+        concurrent operations, and designing a user-friendly interface for
+        administrators and users. To overcome these, I employed best practices
+        in software development, such as adhering to the SOLID principles,
+        implementing comprehensive unit and integration tests, and leveraging
+        Spring Boot's powerful dependency injection and transaction management
+        capabilities. Testing was a critical phase, involving the use of tools
+        like JUnit and Mockito to validate the correctness and reliability of
+        the application. Through rigorous testing, I was able to identify and
+        resolve issues, ensuring the system's stability and performance.
+      </p>
+      <p>
+        This project was a significant learning experience, solidifying my
+        skills in Spring Boot and preparing me for real-world application
+        development challenges. It provided valuable insights into the practical
+        aspects of software engineering, from designing and developing scalable
+        applications to troubleshooting and optimizing performance. The
+        experience also highlighted areas for future enhancement, such as
+        integrating advanced search functionalities, improving the user
+        interface, and incorporating additional features to enhance the system's
+        robustness and usability. Overall, this project was instrumental in
+        translating my theoretical knowledge into practical skills, equipping me
+        with the tools and confidence needed to tackle complex software
+        development projects.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:akshayasathana19@gmail.com" class="footer__link"
+        >akshayasathana19@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/akshaya-kumar-8677851a9?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bi6F64YHKQBWTZ7BgSsJQTg%3D%3D"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/Akshaya-kumar19"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.hackerrank.com/akshayasathana19?hr_r=1"
+          >
+            <i class="fab fa-hackerrank"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
