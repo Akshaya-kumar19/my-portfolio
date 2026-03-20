@@ -302,15 +302,19 @@ header{
 }
 
 @media (min-width: 800px){
-    .services{
+    .services {
         display: flex;
+        flex-wrap: wrap;           /* This allows cards to drop to a second row */
+        justify-content: center;   /* Centers the bottom row */
+        gap: 2em;                  /* Modern, cleaner way to add spacing between cards */
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
-
     }
-    .service + .service{
-        margin-left: 2em;
+    
+    .service {
+        flex: 1 1 300px;           /* Lets cards grow/shrink, but forces a minimum width of 300px */
+        margin: 0;                 /* Removes the old auto margins so 'gap' works properly */
     }
 }
 
